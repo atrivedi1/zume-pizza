@@ -23,7 +23,7 @@ $(document).ready(function(){
         //create new image
         var newMovieImage = document.createElement("img");
         newMovieImage.setAttribute("class", "movie-poster");
-        newMovieImage.setAttribute("src", "./poster.jpg");
+        newMovieImage.setAttribute("src", "../assets/poster.jpg");
 
         //create new title div
         var newMovieTitle = document.createElement("div");
@@ -38,9 +38,9 @@ $(document).ready(function(){
             var movieStar = document.createElement("img");
 
             if(i <= movies[movieTitle].stars) {
-               movieStar.setAttribute("src", "./star_filled.png"); 
+               movieStar.setAttribute("src", "../assets/star_filled.png"); 
             } else {
-                movieStar.setAttribute("src", "./star_empty.png"); 
+                movieStar.setAttribute("src", "../assets/star_empty.png"); 
             }
 
             newMovieStarRating.appendChild(movieStar);
